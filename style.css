@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
 }
+
+/* header section style */
 .banner{
     width: 90%;
     background-color: #161616;
@@ -45,8 +47,16 @@
     padding: 2% 3%;
     border-radius: 5px;
     text-decoration: none;
+    box-shadow: inset 0 0 0 0 #2c65d7;
+    
+}
+.banner-text a:hover{
+    box-shadow: inset 300px 0 0 0 #2c65d7;
+    transition: ease-out 2s;
 }
 
+
+/* main section style */
 .container{
     width: 90%;
     margin: 80px auto;
@@ -130,9 +140,8 @@
     display: none;
 }
 
-
+/* footer section style */
 footer{
-    
     width: 100%;
     background-color: #161616;
     display: block;
@@ -179,9 +188,13 @@ footer{
     color: #B9B9B9;
     width: 100%;
 }
+.fa-brands{
+    color: #B9B9B9;
+    margin: 10px 20px;
+}
+
 
 /* Upcoming Match CSS */
-
 .upcoming-match{
     width: 100%;
     border-radius: 10px;
@@ -222,7 +235,7 @@ footer{
     color: #161616;
 }
 
-/* Responsive */
+/* Responsive small device */
 @media only screen and (max-width: 576px) {
     .banner{
         display: block;
@@ -264,7 +277,12 @@ footer{
         margin: 0 auto;
         grid-template-columns: repeat(1, 1fr);
     }
+    .footer-aria .info-menu ul{
+        flex-direction: column;
+    }
 }
+
+/* Responsive medium device */
 @media only screen and (min-width: 577px) and (max-width: 992px) {
     .container {
         display: flex;
